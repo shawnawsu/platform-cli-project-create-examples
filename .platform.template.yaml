@@ -1,0 +1,107 @@
+
+info:
+  # Unique machine name, prefaced by a vendor or organization identifier
+  id: platformsh/drupal7
+
+  # The human-readable name of the template.
+  name: Drupal 7
+
+  # Human-readable descriptive text for the template. Supports limited HTML.
+  description: |
+    <p>This template builds a Drupal 7 site using Drush make.</p>
+    <p>Drupal is a flexible and extensible PHP-based CMS framework.  Version 7 is the legacy support version.</p>
+
+  # A list of tags associated with the template.
+  tags:
+  - PHP
+  - Drupal
+  - CMS
+
+  # An image URI (either base64-encoded or a URL) representing the template.
+  image: data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNSA0MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzUgNDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMDA4RUNFO30KPC9zdHlsZT4KPGc+CjwvZz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI0LDYuNmMwLDAtMi4zLTEtMy42LTEuOGMwLDAtMS43LTEtNC41LTQuN2MwLDAsMC4xLDQuMi00LjQsNi40QzQuNCw5LjMsMCwxNS4yLDAsMjIuN0MwLDMyLjIsNy44LDQwLDE3LjMsNDAKCWM5LjYsMCwxNy4zLTcuOCwxNy4zLTE3LjNDMzQuNywxMS4xLDI0LDYuNiwyNCw2LjZ6IE00LjgsMTYuMWMtMi43LDAuNi0yLjUtMC44LTItMmMwLjItMC43LDAuOS0xLjUsMC45LTEuNWMxLjgtMi45LDUuOC01LDUuOC01CglsMCwwYzAuNS0wLjIsMS40LTAuNywyLjItMS4xYzEuNi0wLjksMi0xLjQsMi0xLjRjMi4zLTIuMiwyLjEtNC45LDIuMS01YzAsMCwwLDAsMCwwYzAsMCwwLDAsMCwwdjBjMCwwLDAsMCwwLDAKCWMyLDQtMC40LDUuOC0wLjQsNS44YzAuNiwwLjYsMC40LDEuMiwwLjQsMS4yQzEyLjcsMTMuOCw0LjgsMTYuMSw0LjgsMTYuMXogTTI1LjcsMzcuMWMtMC4yLDAuMS0yLjcsMS4zLTUuNiwxLjMKCWMtMS42LDAtMy4zLTAuNC00LjgtMS40Yy0wLjUtMC40LTAuNy0xLjEtMC40LTEuNmMwLjEtMC4yLDAuNy0wLjksMi4xLDBsMCwwYzAuMSwwLjEsMy40LDIuMyw4LjUtMC41YzAuNC0wLjIsMC45LTAuMSwxLjEsMC4zCglDMjYuOSwzNS42LDI3LDM2LjQsMjUuNywzNy4xeiBNMTguNywzMi45bDAuMS0wLjFjMC4xLTAuMSwxLjgtMi4zLDQuMy0yYzAuNCwwLDEuOCwwLjEsMi43LDEuOGMwLjEsMC4yLDAuMywwLjktMC4xLDEuNAoJYy0wLjIsMC4yLTAuNSwwLjQtMS4xLDAuMmMtMC40LTAuMS0wLjYtMC41LTAuNi0wLjdsMCwwYy0wLjEtMC4zLTAuMi0wLjUtMS4yLTAuNmMtMC44LTAuMS0xLjMsMC4zLTEuOSwwLjgKCWMtMC4zLDAuMy0wLjcsMC42LTEuMSwwLjdjLTAuMSwwLjEtMC4yLDAuMS0wLjQsMC4xYy0wLjIsMC0wLjQtMC4xLTAuNi0wLjJDMTguNSwzNCwxOC40LDMzLjYsMTguNywzMi45eiBNMzAuMSwzMy4xCgljMCwwLTAuOSwwLjMtMS44LTAuN2MwLDAtMi43LTMuMS00LTMuNmMwLDAtMC44LTAuMy0xLjgsMC4xYzAsMC0wLjcsMC4xLTMuNCwxLjljMCwwLTQuNiwyLjktNi45LDIuNWMwLDAtNS4yLDAuMS00LjUtNS40CgljMCwwLDEuMS02LjIsOC4zLTQuOGMwLDAsMS42LDAuMyw0LjUsMi42YzAsMCwyLDEuNSwzLDEuNWMwLDAsMC44LDAuMSwyLjYtMWMwLDAsMy41LTIuNyw0LjgtMi42YzAsMCwwLDAsMCwwCgljMC4yLDAsMi41LTAuMSwyLjUsMy43QzMzLjMsMjcuMiwzMy40LDMxLjYsMzAuMSwzMy4xeiIvPgo8L3N2Zz4K
+  
+  # Additional notes displayed in the template's detail view.
+  # Each note object is displayed as a small section heading with content below. Supports limited HTML.
+  notes:
+    - heading: "Apps & Services"
+      content: "PHP 7.2<br/>MySQL 10.2"
+
+# This key describes the initialization call made to the master environment at
+# project creation time. This is part of the full v2 UI operation mode, which
+# places project schema/options selection early in the creation process, rather
+# than later as it exitss now. To allow this schema to be backwards-compatible,
+# this key also gets mapped to the appropriate location in project.settings so
+# that the current UI can have its own workflow overridden as well.
+initialize:
+  repository: git://github.com/platformsh/template-drupal7.git@master
+  config: null
+  files: []
+  profile: Drupal 7
+
+# The default key allows the `YAML` file to make additional changes to the project after 
+# it has been provisioned but before the subscrition is marked as active. 
+defaults:
+  # Here the `variables` key allows default project-level variables to be set. 
+  variables:
+    - name: env:COMPOSER_AUTH
+      value: ""
+      is_json: false
+      visible_build: true
+      visible_runtime: false
+    - name: drupal7:site_name
+      value: "Hello, world!"
+      is_json: false
+      visible_build: false
+      visible_runtime: true
+
+  # A list of UUIDs and access levels for the project
+  access:
+    - user: [UUID HERE]
+      role: admin
+    - user: [UUID HERE]
+      role: viewer
+    - email: [EMAIL HERE]
+      role: admin
+    - user: [UUID HERE]
+
+#This key allows the list of available regions to be expanded or restricted for a particular project.
+regions:
+  # This adds regions not in the default list, making them
+  # accessible to the user for this project/checkout.
+  additional:
+    - bc.platform.sh
+  # This key overrides the list provided by the defaults + the additional key,
+  # but does not permit access to any excluded regions. For this key, the last
+  # implementation of this key will "win".
+  only:
+    - us.platform.sh
+    - eu.platform.sh
+  # Removes regions from the list and blocks them from being used for
+  # this project.
+  exclude: 
+    - us-2.platform.sh
+    - au.platform.sh
+    - eu-2.platform.sh
+    - nl-1.platform.sh
+
+## Sets the available plans in the same way:
+plans:
+  # Removes plans from the list and bloceks them from being used for this
+  # project.
+  exclude:
+    - development
+    - small
+  # This adds regions not in the default list, making them
+  # accessible to the user for this project/checkout.    
+  additional:
+    - 2xlarge
+    - xlarge
+  # This key overrides the list provided by the defaults + the additional key,
+  # but does not permit access to any excluded plans. For this key, the last
+  # implementation of this key will "win" (i.e. the project level will supersede
+  # the vendor level if this key is present.)
+  only:
+    - development
+    - standard
+    - medium
+    - large
