@@ -53,5 +53,5 @@ info:
   notes:
     - heading: "Apps & Services"
       content: "PHP 7.2<br/>MySQL 10.2"
-template: https://github.com/platformsh/template-builder/blob/master/templates/django2/.platform.template.yaml
+template: https://github.com/shawnawsu/platform-cli-project-create-examples/blob/master/.platform.template.yaml
       
