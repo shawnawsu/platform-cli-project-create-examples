@@ -1,3 +1,5 @@
+[![Try on Platform.sh](https://console.platform.sh/projects/create-project?template=sometemplateurihere)](https://platform.sh)
+
 # platform-cli-project-create-examples
 
 The example files contained here work with the `project:create` command and its options. The **Platform.sh CLI** is the official command-line interface for [Platform.sh](https://platform.sh) more information, including installation instructions can be found here: https://github.com/platformsh/platformsh-cli.
