@@ -1,4 +1,4 @@
-[![Try on Platform.sh](https://console.platform.sh/projects/create-project?template=sometemplateurihere)](https://platform.sh)
+[![Try on Platform.sh](https://console.platform.sh/projects/create-project?template=sometemplateurihere)](https://console.platform.sh/projects/create-project?template=sometemplateurihere)
 
 # platform-cli-project-create-examples
 
